@@ -5,11 +5,36 @@
 //        using JUnit, write and execute at least 2 tests for each method, giving some information to the user regarding each test
 
 public class Operations {
-    public static int subtraction(int minuend, int subtrahend) {
-        return minuend - subtrahend;
+
+    private int number1;
+    private int number2;
+
+    public Operations(int number1, int number2) {
+        this.number1 = number1;
+        this.number2 = number2;
     }
 
-    public static int multiplication(int multiplies, int multiplicand) {
-        return multiplies * multiplicand;
+    public int getNumber1() {
+        return number1;
+    }
+
+    public int getNumber2() {
+        return number2;
+    }
+
+    public void setNumber1(int number1) {
+        this.number1 = number1;
+    }
+
+    public void setNumber2(int number2) {
+        this.number2 = number2;
+    }
+
+    public int subtraction() {
+        return number1 - number2;
+    }
+
+    public int multiplication() {
+        return number1 * number2;
     }
 }
