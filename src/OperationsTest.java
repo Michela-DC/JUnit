@@ -11,25 +11,25 @@ class OperationsTest {
 
     @Test
     public void subtractionPositiveTest() {
-        Operations operation = new Operations(37, 18);
-        Assertions.assertEquals(19, operation.subtraction());
+        int subtractionResult = Operations.subtraction(37, 18);
+        Assertions.assertEquals(19, subtractionResult);
     }
 
     @Test
     public void subtractionNegativeTest() {
-        Operations operation = new Operations(82, 30);
-        Assertions.assertEquals(44, operation.subtraction());
+        int subtractionResult = Operations.subtraction(7, 35);
+        Assertions.assertEquals(44, subtractionResult);
     }
 
     @Test
     public void multiplicationPositiveTest() {
-        Operations operation = new Operations(12, 3);
-        Assertions.assertEquals(36, operation.multiplication());
+        int multiplicationResult = Operations.multiplication(4, 8);
+        Assertions.assertEquals(32, multiplicationResult);
     }
 
     @Test
     public void multiplicationNegativeTest() {
-        Operations operation = new Operations(34, 8);
-        Assertions.assertEquals(32, operation.multiplication());
+        int multiplicationResult = Operations.multiplication(12, 27);
+        Assertions.assertEquals(36, multiplicationResult);
     }
 }
